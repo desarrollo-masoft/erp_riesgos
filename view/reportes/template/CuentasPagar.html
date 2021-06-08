@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  	<meta charset="utf-8"/>
+  </head>
+  
+  <style>
+  </style>
+ 
+
+  <body>
+ 	<table class="titulobody">
+		<tr>
+		 <td>		 
+		 FCPC. CUENTAS POR PAGAR		
+		</td>
+		</tr>
+	 </table>
+
+  		
+	<div >
+	    
+	    <table class="tab1principal">
+			
+			<tr>
+				 <td class="" >
+				 	<strong>Identificación Lote: </strong> {NOMBRELOTE}
+				 </td>				 
+				 
+				 <td class="" >
+				  <strong>Frecuencia de lote:</strong>{FRECUENCIA}
+				 </td>
+			</tr>
+			<tr>
+				 <td class="" >
+				 	<strong>Información lote: </strong> {DESCLOTE}
+				 </td>		 
+				 		 
+			</tr>			
+			<tr>
+				 <td class="" >
+				 	<strong>Valor Total Documento: </strong>$ {SALDOCUENTA}
+				 </td>	 
+			</tr>			
+			<tr>
+				<td>
+					<strong>Usuario Documento: </strong> {USUARIODOCUMENTO}
+				</td>
+				<td>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<strong>Descripción Documento: </strong> {DESCRIPCIONDOCUMENTO}
+				</td>
+				<td>
+					<strong>Periodo: </strong> {PERIODOFISCAL}
+				</td>
+			</tr>
+	    </table>
+	    
+	   
+	   <hr>
+	   
+	    <table class="tab2cabecera" >
+	    <tr class="bordeinferior">			 
+			 <td class="" >
+			 	<b>Núm. comprobante</b>
+			 </td>
+			 <td class=""  >
+			 	<b>Núm. de documento</b>
+			 </td>
+			 <td class=""  >
+			 	<b>Fecha del documento</b>
+			 </td>
+			 <td class=""  >
+			 	<b>Id. de proveedor</b>
+			 </td>
+			 <td class=""  >
+			 	<b>Proveedor</b>
+			 </td>		 
+			 <td class="" >
+			 	<b>Total del documento</b>
+			 </td>
+			 <td class="" >
+			 	<b>Compras</b>
+			 </td>		 
+			 <td class="" >
+			 	<b>Impuesto</b>
+			 </td>
+		</tr>
+		<tr>		 
+		 <td class="" >
+		 {NUMEROCOMPROBANTE}
+		 </td>
+		 <td class=""  >
+		 {NUMERODOCUMENTO}
+		 </td>
+		 <td class="">
+		 {FECHADOCUMENTO}
+		 </td>
+		 <td class="">
+		 {IDEPROVEEDOR}
+		 </td>
+		 <td class="" >
+		 {NOMBREPROVEEDOR}
+		 </td>
+		 <td class="decimales">
+		 $ {SALDOCUENTA}
+		 </td>
+		 <td class="decimales">
+		 $ {COMPRAS}
+		 </td>		
+		 <td class="decimales">
+		 $ {IMPUESTO}
+		 </td>
+		</tr>
+	    </table>
+	    <hr>
+	    
+	    
+	    {TABLADISTRIBUCION}
+	    
+		<hr>
+	    
+	    {TABLAIMPUESTOS}
+	   
+	   
+	    
+	    <table class="tab2cabecera" >
+	    	<caption>Valores a liquidar Proveedores</caption>
+		    <tr class="bordeinferior">
+			 <td class="">		 <b>Monto de compras</b>		 </td>		 
+			 <td class="">		 <b>Monto impuesto</b>		     </td>
+			 <td class="">		 <b>Total del documento a Liquidar</b>		 </td>
+			</tr>	
+			
+			<tr>			
+			 <td class="decimales">$ {COMPRAS}</td>		 
+			 <td class="decimales">$ {IMPUESTO}</td>		 
+			 <td class="decimales">$ {SALDOCUENTA}</td>			 
+			</tr>
+	    </table> 
+	    
+	</div>
+	
+  </body>
+  </html>

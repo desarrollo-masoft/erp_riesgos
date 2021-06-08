@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  	<meta charset="utf-8"/>
+  	<title>ACTIVOS FIJOS</title>
+  <style>  
+	
+    
+	table {
+		border: 1px solid black;
+		font-size:12px;
+		width:100%;
+	}
+	
+	td{
+		font-size:10px;
+		padding-left:5px;
+	}	
+	
+	footer
+	{
+    margin-top:20px;
+    width:100%;
+    height:100px;
+    background-color:red;
+	}
+	
+	.numero{
+		text-align:right;
+	}
+	
+	table tr.grupocuenta td  { 
+	background-color: #EEEEEE;
+	font-variant: small-caps;
+    font-weight: bold;
+    text-transform: uppercase;   
+    
+	}
+	
+	table tr.grupototales td  {
+	font-variant: small-caps;
+    font-weight: bold; 
+    /*text-decoration: underline;*/
+    /*border-bottom: 1px solid #333333;*/
+    
+	}
+	
+	table tr.titulos td  {
+	    font-weight: bold; 
+    
+	}
+	
+	table tr td.ul  {
+		border-bottom: 1px solid #333333;    
+	}
+	
+	.centrado{
+		text-align: center;
+	}
+	
+	td .inferior{
+	 border-bottom: 1px solid red;
+	}
+	
+	.numero{
+		text-align:right;
+	}
+	
+  </style>
+  
+  </head>
+  <body>
+
+
+  	
+  	<div>
+  		<div style="font-family: Arial;  color:#000000; width: 100%; text-align: center; ">
+  			<h3>ACTIVOS FIJOS AL 31 DIC {APERIODO}</h3>  			
+  		</div>  		
+  	</div>
+  	
+  	  	
+  	<div style="width:100%">  	
+  		
+  		<table>
+  			<caption><strong>DEPRECIACION INDIVIDUAL</strong></caption>
+  				
+  			<thead>
+  				<tr>
+  					<th>GRUPO : {GRUPOACTIVO}</th>
+  					<th>ESTADO : {ESTADOACTIVO}</th>
+  				</tr>
+  				
+  			</thead>
+  			
+  				<tr>
+  					<td><img src="view/Administracion/DevuelveImagenView.php?id_valor={IDACTIVO}&id_nombre=id_activos_fijos&tabla=act_activos_fijos&campo=imagen_activos_fijos" alt="" width="40" height="30"/></td>
+  					
+  				</tr>
+  				<tr>
+  					<td><strong>CODIGO : </strong>{CODIGOACTIVO}</td><td><strong>CANTIDAD :</strong> {CANTIDADACTIVO}</td>
+  					
+  				</tr>
+  				<tr>
+  					<td><strong>NOMBRE :</strong> {NOMBREACTIVO}</td>
+  				</tr>
+  				<tr>
+  					<td><strong>FECHA DE ADQUISISCIÓN :</strong> {FECHAACTIVO}</td>
+  				</tr>
+  				<tr>
+  					<td><strong>VALOR DE ADQUISICIÓN : </strong>{VALORACTIVO}</td>
+  				</tr>
+  				<tr>
+  					<td><strong>DESCRIPCION :</strong> {DESCACTIVO}</td>
+  				</tr>
+  				<tr>
+  					<td><strong>UBICACION : </strong>{UBIACTIVO}</td>
+  				</tr>
+  				<tr>
+  					<td><strong>RESPONSABLE :</strong> {RESPONSABLE}</td>
+  					<td><strong> {ISDEPRECIADO}</strong></td>
+  				</tr>
+  				
+  			<tbody>
+  			</tbody>
+  			<tfoot>
+  			</tfoot>
+  			
+  		</table>
+  		  		
+  	</div>
+  	
+  	<br>
+  	
+	<div style="width:100%">
+		
+		{TABLADEPRECIACION}
+		
+	</div>
+	
+	
+  </body>
+  </html>

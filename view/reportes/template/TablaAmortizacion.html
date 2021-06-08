@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+  	<meta charset="utf-8"/>
+  
+  </head>
+  <body>
+  	<div>
+  		<table class="4" align="center">
+		<tr>
+		 <td class="2">
+		 <strong>&nbsp;</strong>	
+		 </td>
+		 <td>
+		 <strong>PAGARÉ A LA ORDEN</strong>	
+		 </td>
+		 
+		</tr>
+	    </table>
+	    <br>
+	    <table style="width:100px;" align="right">
+		<tr>
+		 <td  style="font-size: 60%;">
+		 <strong>US$</strong>	
+		 </td>
+		 <td  style="font-size: 60%;">
+		 <strong>{MONTO}</strong>	
+		 </td>
+		</tr>
+	    </table>
+	    
+	    <table class="2" style="width:100px;" align="justify">
+		<tr>
+		 <td  style="font-size: 60%;">
+		 Debo(emos) y pagaré(mos) solidaria e incondicionalmente, a la orden de F.C.P.C DE CESANTÍA DE 
+		 SERVIDORES Y TRABAJADORES PÚBLICO DE FUERZAS ARMADAS-CAPREMCI, en la ciudad de <strong>{CIUDAD}</strong>,
+		 o en el lugar donde se me(nos) reconvenga, la cantidad de <br><br>{MONTORECIBIRLETRAS} dólares valor recibido a entera satisfacción;<br><br>
+		 obligándome(nos) irrevocablemente, a reconocer el {TAZA}% de tasa de interés nominal anual sobre los saldos de capital. Dicha suma
+		 de dinero me(nos) obligo(obligamos) a pagar incondicionalmente, mediante 21 dividendos, con vencimientos sucesivos que en concepto de capital 
+		 e interés se indican en la tabla de amortización que acontinuacion se detalla:
+		 </td>
+		</tr>
+	    </table>
+	    <br>
+	
+	  <div class="izq" >
+	  <table >
+	  <tr>
+	  <td width=80px><strong>Prestamo No:</strong></td>
+	  <td width=90px>{CODCREDITO}-{NUMCREDITO}</td>
+	  <td width=90px><strong>Fecha Solicitud:</strong></td>
+	  <td width=20px>{FECHACONCRED}</td>
+	  </tr>
+	  </table>
+	  <table >
+	  <tr>
+	  <td width=80px>&nbsp;</td>
+	  <td width=90px>&nbsp;</td>
+	  <td width=90px><strong>Fecha-Acreed:</strong></td>
+	  <td width=20px>{FECHACONCRED}</td>
+	  </tr>
+	  </table>
+	  <table >
+	  <tr>
+	  <td width=75px><strong>Nombre:</strong></td>
+	  <td width=250px>{APELLPARTICIPE}&nbsp;{NOMPARICIPE}</td>
+	  </tr>
+	  <tr>
+	  <td width=75px><strong>Identificación:</strong></td>
+	  <td width=250px>{CEDPARTICIPE}</td>
+	  </tr>
+	  <tr>
+	  <td width=75px><strong>Entidad Patronal:</strong></td>
+	  <td width=250px>{ENTIDADPATRON}</td>
+	  </tr>
+	  </table>
+	  </div>
+	  <div class="der">
+	<table >
+	  <tr>
+	  <td width=100px><strong>Tipo de Préstamo:</strong></td>
+	  <td width=250px>{TIPOPRESTAMO}</td>
+	  </tr>
+	  </table>
+	  <table >
+	  <tr>
+	  <td width=80px><strong>Típo cuota:</strong></td>
+	  <td width=90px>Fija</td>
+	  <td width=40px><strong>Plazo:</strong></td>
+	  <td width=50px>{PLAZO} meses</td>
+	  </tr>
+	  </table>
+	  <table >
+	  <tr>
+	  <td width=100px><strong>Tasa:</strong></td>
+	  <td width=250px>{TAZA} % mensuales</td>
+	  </tr>
+	  </table>
+	  <table >
+	  <tr>
+	  <td width=100px><strong>Estado:</strong></td>
+	  <td width=250px>{ESTADO}</td>
+	  </tr>
+	  <tr>
+	  <td width=100px><strong>&nbsp;<br>&nbsp;</strong></td>
+	  <td width=250px>&nbsp;</td>
+	  </tr>
+	  </table>
+	</div>
+		<div class="izq" >
+	  <table >
+	  <tr>
+	  <td align="center"><u><strong>DATOS DEL GARANTE</strong></u></td>
+	  </tr>
+	  </table>
+	 <table >
+	 <tr>
+	  <tr>
+	  <td width=75px><strong>Nombre:</strong></td>
+	  <td width=250px>{NOMGARANTE}&nbsp; &nbsp;{APELLGARANTE}</td>
+	  </tr>
+	  </table>
+	  <table >
+	  <tr>
+	  <td width=75px><strong>Cédula:</strong></td>
+	  <td width=100px>{CEDULAGARANTE}</td>
+	  <td width=20px><strong></strong></td>
+	  <td width=30px></td>
+	  </tr>
+	  </table>
+	  <table >
+	  <tr>
+	  <td width=75px><strong>Entidad Patronal:</strong></td>
+	  <td width=250px>{ENTIDGARANTE}</td>
+	  </tr>
+	  <tr>
+	  <td width=75px><strong>Teléfono:</strong></td>
+	  <td width=250px>{TELEFONOGARANTE}</td>
+	  </tr>
+	  </table>
+	  
+	</div>
+	<div class="der">
+	 <table >
+	 <tr>
+	  <td width=100px><strong>&nbsp;</strong></td>
+	  <td width=250px>&nbsp;</td>
+	  </tr>
+	  </table>
+	  <table>
+	  <tr>
+	  <td width=100px><strong>Mónto:</strong></td>
+	  <td width=80px align="right">{MONTO}</td>
+	  <td width=50px><strong>Moneda:</strong></td>
+	  <td width=25px>DÓLARES</td>
+	  </tr>
+	  </table>
+	  <table>
+	  <tr>
+	  <td width=100px><strong>Saldo:</strong></td>
+	  <td width=80px align="right">{SALDO}</td>
+	  <td width=50px><strong>&nbsp;</strong></td>
+	  <td width=25px>&nbsp;</td>
+	  </tr>
+	  <tr>
+	  <td width=100px><strong>Mónto a Recibir:</strong></td>
+	  <td width=80px align="right">{MONTORECIBIR}</td>
+	  <td width=50px><strong>&nbsp;</strong></td>
+	  <td width=25px>&nbsp;</td>
+	  </tr>
+	  </table>
+	</div>
+	</div>
+	<br>
+	 <div>{DETALLE_AMORTIZACION}</div>
+	 
+	<div>
+	<br>
+	<br>
+	 <table class="2" style="width:100px;" align="justify">
+		<tr>
+		 <td  style="font-size: 60%;">
+		 En caso de mora en el pago del total o de uno o más de los dividendos antes indicados o de cualquier otra
+		 obligación adeudada por mi(nosotros) a favor del acreedor, reconozcan(cemos) a favor de éste el derecho para la
+		 aceleración o anticipación de los vencimientos de los dividendos por vencer, por lo cual el acreedor podrá declarar
+		 de plazo vencido, unilateral y anticipadamente, la totalidad de la obligación constante en este pagaré y demandar
+		 judicialmente el pago del mismo incluidos capital, intereses corrientes, intereses de mora calculados a la máxima
+		 tasa de conforme lo disponen las leyes y ademas regulaciones pertinentes hasta la total cancelación de los valores
+		 adeudados, costas judiciales y extrajudiciales, comisiones y horarios profesionales y en general todos 
+		 aquellos costos generados por la suscripción y cobro del presente pagaré. La sola afirmación del acreedor será 
+		 prueba suficiente de la morra incurrida y del ejercicio del derecho antes mencionado.
+		 <br><br>
+		 Renuncio(amos) fuero y domicilio y quedo(amos) expresamente sometidos(s) a los jueces competentes de la 
+		 ciudad de QUITO o del lugar en que se me(nos) reconvenga, y al tramite ejecutivo o verval sumario a elección
+		 del demandante; obligandome(nos) irrevocablemente al fiel cumplimiento de lo aquí estipulado con 
+		 todos mis(nuestros) bienes presentes y futuros. El pago no podrá hacerse por partes ni aún por mis (nuestros)
+		 herederos.
+		 <br><br>
+		 Sin protesto. Exímase al acreedor de este pagaré a Orden de su presentación para el pago al(los)
+		 suscriptor(es) del mismo, así como realizar los avisos por falta de págo.
+		 <br><br>
+		 {CIUDAD},&nbsp; {fechaactual}
+		 </td>
+		</tr>
+	    </table>
+	    <br><br>
+	  <table class="3" style="width:100px;" align="justify">
+	  <tr>
+		<td><strong>FIRMA:</strong></td>
+		<td>_______________________________________________</td>
+		</tr>
+		
+		<tr>
+		<td><strong>NOMBRE:</strong></td>
+		<td>{APELLPARTICIPE}&nbsp;{NOMPARICIPE}</td>
+		</tr>
+		
+		<tr>
+		<td><strong>CI:</strong></td>
+		<td>{CEDPARTICIPE}</td>
+		</tr>
+		
+		<tr>
+		<td><strong>DIRECCIÓN:</strong></td>
+		<td>{DIRPARTICIPE}</td>
+		</tr>
+		
+		<tr>
+		<td><strong>TELÉFONO:</strong></td>
+		<td>{TELEFPARTICIPE}</td>
+		</tr>
+	  </table>  
+	
+	</div>
+	
+  </body>
+  </html>
