@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  	<meta charset="utf-8"/>
+  	<title>HOJA DE PERMISO</title>
+  <style>  
+	 @page {
+        margin-top: 1cm;
+        margin-bottom: 1cm;
+    }
+    
+	table {
+		border: 1px solid black;
+		font-size:12px;
+		width:100%;
+	}
+	
+	td{
+		font-size:10px;
+		padding-left:5px;
+	}	
+	
+	footer
+	{
+    margin-top:20px;
+    width:100%;
+    height:100px;
+    background-color:red;
+	}
+	
+	.numero{
+		text-align:right;
+	}
+	
+	table tr.grupocuenta td  { 
+	background-color: #EEEEEE;
+	font-variant: small-caps;
+    font-weight: bold;
+    text-transform: uppercase;   
+    
+	}
+	
+	table tr.grupototales td  {
+	font-variant: small-caps;
+    font-weight: bold; 
+    /*text-decoration: underline;*/
+    /*border-bottom: 1px solid #333333;*/
+    
+	}
+	
+	table tr.titulos td  {
+	    font-weight: bold; 
+    
+	}
+	
+	table tr td.ul  {
+		border-bottom: 1px solid #333333;    
+	}
+	
+	.centrado{
+		text-align: center;
+	}
+	
+	td .inferior{
+	 border-bottom: 1px solid red;
+	}
+	
+	.numero{
+		text-align:right;
+	}
+	.informacion
+	{
+	 text-align: left;
+	 font-size: 15px;
+	}
+	
+	.tabla
+	{
+	width:90%
+	}
+	
+	.firmas
+	{
+	text-align: center;  
+	font-size: 15px;
+	}
+	td.central{
+	background-repeat: no-repeat;
+  	background-size: 10% 100%;
+	background-image: url(view/images/Logo-Capremci-h-170.jpg); 
+	background-position: 0% 100%;
+	font-size: 11px;  
+	padding: 0px; 
+	text-align:center;
+	
+}
+.htexto1{		
+	font-size: 10px;  padding: 5px; 
+	text-align:left;
+	width: 65%;
+}
+.htexto2{		
+	font-size: 10px;  padding: 5px; 
+	text-align:left;
+	width: 33%;
+}
+.htexto2 span{	 
+	text-align:left;
+}
+
+/***************************/
+
+.titulobody {
+	width:100%;font-family:Times New Roman, sans-serif;
+  	font-size:12px; line-height:normal; border:1px solid black;
+
+  }
+
+.titulobody td{
+	font-weight:bold;
+  	padding:0 0.5em; 
+	text-align:center;
+	border:hidden;
+  }
+ 
+ .bodycabecera{
+ 	border:hidden;
+ }
+ 
+ .tab1principal{
+ 	width:100%;font-family:Times New Roman, sans-serif;
+  	font-size:0.75em;line-height:2em;
+ }
+.tab1principal td{
+  	padding:0 0.5em;
+	border:hidden;
+  }
+.tab2cabecera{
+	width:100%;font-family:Times New Roman, sans-serif;
+ 	font-size:0.75em;line-height:2em;
+ 	border-collapse: separate;
+ 	border-spacing: 10px 0px; 
+}
+.tab2cabecera td{
+  	padding:0 0.5em;
+  }
+ .bordeinferior td {
+  border-bottom: 1px; 
+  border-bottom-style: dotted;
+  
+ }
+ .tab3datos{
+	width:100%;font-family:Times New Roman, sans-serif;
+ 	font-size:0.75em;line-height:2em;
+ 	border-collapse: separate;
+ 	border-spacing: 10px 0px; 
+}
+.tab3datos td{
+  	padding:0 0.5em;
+  }
+ .decimales{
+ 	text-align: right !important;
+ }
+	
+  </style>
+  
+  </head>
+  <body>
+  	
+   <div>
+    
+    	<table class="headertable" align="center">
+		<tr >				
+			<td  class="central" colspan="2">
+				 <h3>
+				 <strong>
+				 {NOMBREEMPRESA}<br>
+				 {DIRECCIONEMPRESA}<br>
+				 {TELEFONOEMPRESA}
+				</strong>
+				</h3>
+			</td>		
+		</tr>
+		<tr>
+			<td class="htexto1" >
+				 <p>
+				  <strong>Ruc: </strong> {RUCEMPRESA}<br>	
+				   			  
+				  <strong>Usuario: </strong> {USUARIOEMPRESA}
+				 
+				 </p>				 
+			</td>
+			<td class="htexto2" >
+				 <p>				  
+				  <strong>Fecha de Impresión: </strong> {FECHAEMPRESA}<br>
+				 </p>				 
+			</td>
+			
+		</tr>		
+	</table>	
+  			<h3 align="center" >HOJA DE PERMISO</h3>  			
+  		</div> 
+  	
+  	
+  	<div>  	
+  		
+  		<table class="tabla" align="center">
+  				<tr>
+  					<td class="informacion">Nombre del empleado: <b>{NOMBREEMPLEADO}</b></td>  					
+  				</tr>
+  				<tr>
+  					<td class="informacion">Cargo: <b>{CARGOEMPLEADO}</b></td>
+  					<td class="informacion"></td>
+  					<td class="informacion">Departamento: <b>{DPTOEMPLEADO}</b></td>
+  				</tr>
+  				
+  		</table>
+  		<br>
+  		<table class="tabla" align="center">
+  				<tr>
+  					<td class="informacion">Fecha de la solicitud del permiso: </td>
+  					<td class="informacion"><b>{FECHASOLICITUD}</b></td>
+  										
+  				</tr>
+				<tr></tr>
+				<tr></tr>
+				<tr></tr>  				
+  				<tr>
+  					<td class="informacion">Desde: <b>{HORADESDE}</b></td>
+  					<td class="informacion">Hasta: <b>{HORAHASTA}</b></td>
+  				</tr>
+  				
+  		</table>
+  		<br>
+  		<table class="tabla" align="center">
+  		<tr>
+  		<td class="informacion"><b>CAUSA: {CAUSAPERMISO}</b></td>
+  		</tr>
+  		<tr>
+  		<td class="informacion">{DESCRIPCION}<br><br><br><br><br><br></td>
+  		</tr>
+  		<tr>
+  		<td class="firmas"><b>______________________________</b></td>
+  		</tr>
+  		<tr>
+  		<td class="firmas"><b>Firma del solicitante</b></td>
+  		</tr>
+  		<tr>
+  		<td class="informacion">Nota: Adjuntar los respectivos respaldos</td>
+  		</tr>
+  		</table>
+  		<br>
+  		<table class="tabla" align="center">
+  		<tr>
+  		<td class="firmas"><b>Visto Bueno</b></td>
+  		<td class="firmas"><b>Autorizado</b></td>
+  		<td class="firmas"><b>Autorizado</b></td>
+  		</tr>
+  		<tr>
+  		<td class="firmas"><br><br><br><br><b>____________________________</b></td>
+  		<td class="firmas"><br><br><br><br><b>____________________________</b></td>
+  		<td class="firmas"><br><br><br><br><b>____________________________</b></td>
+  		</tr>
+  		<tr>
+  		<td class="firmas"><b>JEFE INMEDIATO</b></td>
+  		<td class="firmas"><b>RECURSOS HUMANOS</b></td>
+  		<td class="firmas"><b>GERENCIA</b></td>
+  		</tr>
+  		</table>
+  		  		
+  	</div>
+  		
+  </body>
+  </html>
